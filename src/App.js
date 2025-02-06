@@ -11,7 +11,7 @@ function App() {
     const formData = new FormData();
     formData.append('resume', file);
 
-    const response = await axios.post('https://your-api-gateway-url/upload', formData);
+    const response = await axios.post('https://main.d1qchgijbj2p47.amplifyapp.com/generate-cover-letter', formData);
     setCoverLetter(response.data.coverLetter);
   };
 
